@@ -4,7 +4,6 @@ module scenes {
         //PRIVATE INSTANCE VARIABLES ++++++++++++
         private _introImage: createjs.Bitmap;
         private _startButton: objects.Button;
-        private _rightCaveButton: objects.Button;
         
         // CONSTRUCTOR ++++++++++++++++++++++
         constructor() {

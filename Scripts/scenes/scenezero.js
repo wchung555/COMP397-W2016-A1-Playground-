@@ -27,7 +27,7 @@ var scenes;
             this._buttonTwo = new objects.Button("Button2", config.Screen.CENTER_X + 100, config.Screen.CENTER_Y + 120);
             this.addChild(this._buttonTwo);
             // add BUTTON TWO event listener            
-            this._buttonTwo.on("click", this._buttonTwoClick, this);
+            //this._buttonTwo.on("click", this._buttonTwoClick, this);
             // add this scene to the global stage container
             stage.addChild(this);
         };
@@ -37,13 +37,13 @@ var scenes;
         //EVENT HANDLERS ++++++++++++++++++++
         // BUTTON ONE click event handler
         SceneZero.prototype._buttonOneClick = function (event) {
-            // Switch to the FIRST_DECISION Scene
+            // Switch to SCENE ONE 
             scene = config.Scene.SCENE_ONE;
             changeScene();
         };
         // BUTTON TWO click event handler
         SceneZero.prototype._buttonTwoClick = function (event) {
-            // Switch to the FIRST_DECISION Scene
+            // Switch to SCENE TWO
             scene = config.Scene.SCENE_TWO;
             changeScene();
         };
