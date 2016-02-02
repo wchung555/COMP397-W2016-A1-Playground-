@@ -5,8 +5,21 @@ var config;
         function Scene() {
         }
         Scene.INTRO = 0;
-        Scene.LEFT_CAVE = 1;
-        Scene.RIGHT_CAVE = 2;
+        Scene.SCENE_ZERO = 1;
+        Scene.SCENE_ONE = 2;
+        Scene.SCENE_ONE_A = 3;
+        Scene.SCENE_ONE_A_I = 4;
+        Scene.SCENE_ONE_A_II = 5;
+        Scene.SCENE_ONE_B = 6;
+        Scene.SCENE_ONE_B_I = 7;
+        Scene.SCENE_ONE_B_II = 8;
+        Scene.SCENE_TWO = 9;
+        Scene.SCENE_TWO_A = 10;
+        Scene.SCENE_TWO_A_I = 11;
+        Scene.SCENE_TWO_A_II = 12;
+        Scene.SCENE_TWO_B = 13;
+        Scene.SCENE_TWO_B_I = 14;
+        Scene.SCENE_TWO_B_II = 15;
         return Scene;
     })();
     config.Scene = Scene;

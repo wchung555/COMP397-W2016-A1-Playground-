@@ -3,7 +3,7 @@ module scenes {
     export class Intro extends objects.Scene {
         //PRIVATE INSTANCE VARIABLES ++++++++++++
         private _introImage: createjs.Bitmap;
-        private _leftCaveButton: objects.Button;
+        private _startButton: objects.Button;
         private _rightCaveButton: objects.Button;
         
         // CONSTRUCTOR ++++++++++++++++++++++
@@ -16,28 +16,18 @@ module scenes {
         // Start Method
         public start(): void {
             // add Intro Image
-            this._introImage = new createjs.Bitmap("../../Assets/images/IntroCave.png");
+            this._introImage = new createjs.Bitmap("../../Assets/images/IntroScreen.png");
             this.addChild(this._introImage);
             
-            // add the LEFT_CAVE button to the MENU scene
-            this._leftCaveButton = new objects.Button(
-                "LeftCaveButton",
+            // add the START button to the MENU scene
+            this._startButton = new objects.Button(
+                "StartButton",
                 config.Screen.CENTER_X - 100,
                 config.Screen.CENTER_Y + 180);
-            this.addChild(this._leftCaveButton);
+            this.addChild(this._startButton);
             
-            // LEFT_CAVE Button event listener
-            this._leftCaveButton.on("click", this._leftCaveButtonClick, this);
-            
-            // add the LEFT_CAVE button to the MENU scene
-            this._rightCaveButton = new objects.Button(
-                "RightCaveButton",
-                config.Screen.CENTER_X + 100,
-                config.Screen.CENTER_Y + 180);
-            this.addChild(this._rightCaveButton);
-            
-            // LEFT_CAVE Button event listener
-            this._rightCaveButton.on("click", this._rightCaveButtonClick, this);
+            // add START button event listener            
+            this._startButton.on("click", this._startButtonClick, this);
             
             // add this scene to the global stage container
             stage.addChild(this);
@@ -51,17 +41,10 @@ module scenes {
         
         //EVENT HANDLERS ++++++++++++++++++++
         
-        // LEFT_CAVE Button click event handler
-        private _leftCaveButtonClick(event: createjs.MouseEvent) {
-            // Switch to the LEFT_CAVE Scene
-            scene = config.Scene.LEFT_CAVE;
-            changeScene();
-        }
-        
-        // LEFT_CAVE Button click event handler
-        private _rightCaveButtonClick(event: createjs.MouseEvent) {
-            // Switch to the LEFT_CAVE Scene
-            scene = config.Scene.RIGHT_CAVE;
+        // START Button click event handler
+        private _startButtonClick(event: createjs.MouseEvent) {
+            // Switch to SCENE ZERO
+            scene = config.Scene.SCENE_ZERO;
             changeScene();
         }
     }
