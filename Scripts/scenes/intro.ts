@@ -23,7 +23,7 @@ module scenes {
             this._startButton = new objects.Button(
                 "StartButton",
                 config.Screen.CENTER_X,
-                config.Screen.CENTER_Y + 180);
+                config.Screen.CENTER_Y + 120);
             this.addChild(this._startButton);
             
             // add START button event listener            
