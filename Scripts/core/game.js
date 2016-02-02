@@ -8,6 +8,7 @@ var scene;
 // Game Scenes
 var intro;
 var sceneZero;
+var sceneOne;
 // var leftCave: scenes.LeftCave;
 // var rightCave: scenes.RightCave;
 function init() {
@@ -64,6 +65,13 @@ function changeScene() {
             sceneZero = new scenes.SceneZero();
             currentScene = sceneZero;
             console.log("Starting SCENE ZERO");
+            break;
+        case config.Scene.SCENE_ONE:
+            // show SCENE ONE
+            stage.removeAllChildren();
+            sceneOne = new scenes.SceneOne();
+            currentScene = sceneOne;
+            console.log("Starting SCENE ONE");
             break;
     }
     console.log(currentScene.numChildren);
