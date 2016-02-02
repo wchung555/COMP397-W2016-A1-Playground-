@@ -33,7 +33,7 @@ var scenes;
         // START Button click event handler
         Intro.prototype._startButtonClick = function (event) {
             // Switch to SCENE ZERO
-            scene = config.Scene.SCENE_ZERO;
+            scene = config.Scene.SCENE_ONE;
             changeScene();
         };
         return Intro;
