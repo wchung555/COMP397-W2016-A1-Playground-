@@ -19,12 +19,12 @@ var scenes;
             this._sceneTwoImage = new createjs.Bitmap("../../Assets/images/Scene2.png");
             this.addChild(this._sceneTwoImage);
             // add BUTTON A to the SCENE ZERO
-            this._buttonA = new objects.Button("Button1a", config.Screen.CENTER_X - 120, config.Screen.CENTER_Y + 120);
+            this._buttonA = new objects.Button("Button2a", config.Screen.CENTER_X - 120, config.Screen.CENTER_Y + 120);
             this.addChild(this._buttonA);
             // add BUTTON A event listener            
             this._buttonA.on("click", this._buttonAClick, this);
             // add BUTTON B to the SCENE ZERO
-            this._buttonB = new objects.Button("Button1b", config.Screen.CENTER_X + 120, config.Screen.CENTER_Y + 120);
+            this._buttonB = new objects.Button("Button2b", config.Screen.CENTER_X + 120, config.Screen.CENTER_Y + 120);
             this.addChild(this._buttonB);
             // add BUTTON B event listener            
             this._buttonB.on("click", this._buttonBClick, this);
