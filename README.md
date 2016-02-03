@@ -1,3 +1,4 @@
-# COMP397-W2016-TheNewDragon
+# COMP397-W2016-Assignment-1-Winnie-Chung
 
-COMP397 The New Dragon Template for Web Game Programming @ Centennial
+COMP397 W2016 - Assignment 1
+Winnie Chung (300833637)
