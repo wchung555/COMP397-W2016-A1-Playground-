@@ -37,7 +37,7 @@ module scenes {
             this.addChild(this._buttonTwo);
             
             // add BUTTON TWO event listener            
-            //this._buttonTwo.on("click", this._buttonTwoClick, this);
+            this._buttonTwo.on("click", this._buttonTwoClick, this);
             
             // add this scene to the global stage container
             stage.addChild(this);

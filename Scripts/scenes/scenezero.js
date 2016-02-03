@@ -27,7 +27,7 @@ var scenes;
             this._buttonTwo = new objects.Button("Button2", config.Screen.CENTER_X + 120, config.Screen.CENTER_Y + 120);
             this.addChild(this._buttonTwo);
             // add BUTTON TWO event listener            
-            //this._buttonTwo.on("click", this._buttonTwoClick, this);
+            this._buttonTwo.on("click", this._buttonTwoClick, this);
             // add this scene to the global stage container
             stage.addChild(this);
         };
