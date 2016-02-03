@@ -43,7 +43,7 @@ module scenes {
         // START Button click event handler
         private _startButtonClick(event: createjs.MouseEvent) {
             // Switch to SCENE ZERO
-            scene = config.Scene.SCENE_ONE;
+            scene = config.Scene.SCENE_ZERO;
             changeScene();
         }
     }

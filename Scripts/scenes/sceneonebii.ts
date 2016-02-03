@@ -1,8 +1,8 @@
-// LEFT_CAVE SCENE
+// SCENE ONE B II
 module scenes {
-    export class LeftCave extends objects.Scene {
+    export class SceneOneBII extends objects.Scene {
         //PRIVATE INSTANCE VARIABLES ++++++++++++
-        private _leftCaveImage: createjs.Bitmap;
+        private _sceneOneBIIImage: createjs.Bitmap;
         private _startOverButton: objects.Button;
         
         // CONSTRUCTOR ++++++++++++++++++++++
@@ -14,26 +14,25 @@ module scenes {
         
         // Start Method
         public start(): void {
-            // add LeftCave Image
-            this._leftCaveImage = new createjs.Bitmap("../../Assets/images/LeftCave.png");
-            this.addChild(this._leftCaveImage);
-
-            // add the BACK button to the OVER scene
+            // add Intro Image
+            this._sceneOneBIIImage = new createjs.Bitmap("../../Assets/images/Scene1bii.png");
+            this.addChild(this._sceneOneBIIImage);
+            
+            // add the START OVER button to the SCENE 1 A
             this._startOverButton = new objects.Button(
                 "StartOverButton",
                 config.Screen.CENTER_X,
-                config.Screen.CENTER_Y + 180);
+                config.Screen.CENTER_Y + 120);
             this.addChild(this._startOverButton);
-           
-            // START_OVER Button event listener
+            
+            // add START button event listener            
             this._startOverButton.on("click", this._startOverButtonClick, this);
-
-
+            
             // add this scene to the global stage container
             stage.addChild(this);
         }
 
-        // PLAY Scene updates here
+        // INTRO Scene updates here
         public update(): void {
 
         }
@@ -41,10 +40,10 @@ module scenes {
         
         //EVENT HANDLERS ++++++++++++++++++++
         
-        // START_OVER Button click event handler
+        // START Button click event handler
         private _startOverButtonClick(event: createjs.MouseEvent) {
-            // Switch to the INTRO Scene
-            scene = config.Scene.INTRO;
+            // Switch to SCENE ZERO
+            scene = config.Scene.SCENE_ZERO;
             changeScene();
         }
     }

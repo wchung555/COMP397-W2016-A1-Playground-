@@ -9,8 +9,19 @@ var scene;
 var intro;
 var sceneZero;
 var sceneOne;
-// var leftCave: scenes.LeftCave;
-// var rightCave: scenes.RightCave;
+var sceneOneA;
+var sceneOneAI;
+var sceneOneAII;
+var sceneOneB;
+var sceneOneBI;
+var sceneOneBII;
+var sceneTwo;
+var sceneTwoA;
+var sceneTwoAI;
+var sceneTwoAII;
+var sceneTwoB;
+var sceneTwoBI;
+var sceneTwoBII;
 function init() {
     // create a reference the HTML canvas Element
     canvas = document.getElementById("canvas");
@@ -72,6 +83,97 @@ function changeScene() {
             sceneOne = new scenes.SceneOne();
             currentScene = sceneOne;
             console.log("Starting SCENE ONE");
+            break;
+        case config.Scene.SCENE_ONE_A:
+            // show SCENE ONE A
+            stage.removeAllChildren();
+            sceneOneA = new scenes.SceneOneA();
+            currentScene = sceneOneA;
+            console.log("Starting SCENE ONE A");
+            break;
+        case config.Scene.SCENE_ONE_A_I:
+            // show SCENE ONE A I
+            stage.removeAllChildren();
+            sceneOneAI = new scenes.SceneOneAI();
+            currentScene = sceneOneAI;
+            console.log("Starting SCENE ONE A I");
+            break;
+        case config.Scene.SCENE_ONE_A_II:
+            // show SCENE ONE A II
+            stage.removeAllChildren();
+            sceneOneAII = new scenes.SceneOneAII();
+            currentScene = sceneOneAII;
+            console.log("Starting SCENE ONE A II");
+            break;
+        case config.Scene.SCENE_ONE_B:
+            // show SCENE ONE B
+            stage.removeAllChildren();
+            sceneOneB = new scenes.SceneOneB();
+            currentScene = sceneOneB;
+            console.log("Starting SCENE ONE B");
+            break;
+        case config.Scene.SCENE_ONE_B_I:
+            // show SCENE ONE B I
+            stage.removeAllChildren();
+            sceneOneBI = new scenes.SceneOneBI();
+            currentScene = sceneOneBI;
+            console.log("Starting SCENE ONE B I");
+            break;
+        case config.Scene.SCENE_ONE_B_II:
+            // show SCENE ONE B II
+            stage.removeAllChildren();
+            sceneOneBII = new scenes.SceneOneBII();
+            currentScene = sceneOneB;
+            console.log("Starting SCENE ONE B II");
+            break;
+        case config.Scene.SCENE_TWO:
+            // show SCENE TWO
+            stage.removeAllChildren();
+            sceneTwo = new scenes.SceneTwo();
+            currentScene = sceneTwo;
+            console.log("Starting SCENE TWO");
+            break;
+        case config.Scene.SCENE_TWO_A:
+            // show SCENE TWO A
+            stage.removeAllChildren();
+            sceneTwoA = new scenes.SceneTwoA();
+            currentScene = sceneTwoA;
+            console.log("Starting SCENE TWO A");
+            break;
+        case config.Scene.SCENE_TWO_A_I:
+            // show SCENE TWO A I
+            stage.removeAllChildren();
+            sceneTwoAI = new scenes.SceneTwoAI();
+            currentScene = sceneTwo;
+            console.log("Starting SCENE TWO A I");
+            break;
+        case config.Scene.SCENE_TWO_A_II:
+            // show SCENE TWO A II
+            stage.removeAllChildren();
+            sceneTwoAII = new scenes.SceneTwoAII();
+            currentScene = sceneTwoAII;
+            console.log("Starting SCENE TWO A II");
+            break;
+        case config.Scene.SCENE_TWO_B:
+            // show SCENE TWO B
+            stage.removeAllChildren();
+            sceneTwoB = new scenes.SceneTwoB();
+            currentScene = sceneTwoB;
+            console.log("Starting SCENE TWO B");
+            break;
+        case config.Scene.SCENE_TWO_B_I:
+            // show SCENE TWO B I
+            stage.removeAllChildren();
+            sceneTwoBI = new scenes.SceneTwoBI();
+            currentScene = sceneTwoBI;
+            console.log("Starting SCENE TWO B I");
+            break;
+        case config.Scene.SCENE_TWO_B_II:
+            // show SCENE TWO B II
+            stage.removeAllChildren();
+            sceneTwoBII = new scenes.SceneTwoBII();
+            currentScene = sceneTwoBII;
+            console.log("Starting SCENE TWO B II");
             break;
     }
     console.log(currentScene.numChildren);

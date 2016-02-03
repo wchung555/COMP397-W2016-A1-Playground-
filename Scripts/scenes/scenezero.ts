@@ -22,7 +22,7 @@ module scenes {
             // add BUTTON ONE to the SCENE ZERO
             this._buttonOne = new objects.Button(
                 "Button1",
-                config.Screen.CENTER_X - 100,
+                config.Screen.CENTER_X - 120,
                 config.Screen.CENTER_Y + 120);
             this.addChild(this._buttonOne);
             
@@ -32,7 +32,7 @@ module scenes {
             // add BUTTON TWO to the SCENE ZERO
             this._buttonTwo = new objects.Button(
                 "Button2",
-                config.Screen.CENTER_X + 100,
+                config.Screen.CENTER_X + 120,
                 config.Screen.CENTER_Y + 120);
             this.addChild(this._buttonTwo);
             

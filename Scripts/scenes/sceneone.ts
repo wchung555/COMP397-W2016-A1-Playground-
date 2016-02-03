@@ -19,25 +19,25 @@ module scenes {
             this._sceneOneImage = new createjs.Bitmap("../../Assets/images/Scene1.png");
             this.addChild(this._sceneOneImage);
             
-            // add BUTTON ONE to the SCENE ZERO
+            // add BUTTON A to the SCENE ZERO
             this._buttonA = new objects.Button(
                 "Button1a",
-                config.Screen.CENTER_X - 100,
+                config.Screen.CENTER_X - 120,
                 config.Screen.CENTER_Y + 120);
             this.addChild(this._buttonA);
             
-            // add BUTTON ONE event listener            
-            //this._buttonA.on("click", this._buttonAClick, this);
+            // add BUTTON A event listener            
+            this._buttonA.on("click", this._buttonAClick, this);
             
-            // add BUTTON TWO to the SCENE ZERO
+            // add BUTTON B to the SCENE ZERO
             this._buttonB = new objects.Button(
                 "Button1b",
-                config.Screen.CENTER_X + 100,
+                config.Screen.CENTER_X + 120,
                 config.Screen.CENTER_Y + 120);
             this.addChild(this._buttonB);
             
-            // add BUTTON TWO event listener            
-            //this._buttonTwo.on("click", this._buttonBClick, this);
+            // add BUTTON B event listener            
+            this._buttonB.on("click", this._buttonBClick, this);
             
             // add this scene to the global stage container
             stage.addChild(this);
@@ -51,14 +51,14 @@ module scenes {
         
         //EVENT HANDLERS ++++++++++++++++++++
         
-        // BUTTON ONE click event handler
+        // BUTTON A click event handler
         private _buttonAClick(event: createjs.MouseEvent) {
             // Switch to the FIRST_DECISION Scene
             scene = config.Scene.SCENE_ONE_A;
             changeScene();
         }
         
-        // BUTTON TWO click event handler
+        // BUTTON B click event handler
         private _buttonBClick(event: createjs.MouseEvent) {
             // Switch to the FIRST_DECISION Scene
             scene = config.Scene.SCENE_ONE_B;
